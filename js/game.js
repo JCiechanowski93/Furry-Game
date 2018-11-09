@@ -66,17 +66,23 @@ var Game = function () {
             this.showCoin();
         }
     }
-    this.gameOver = function () {
+    this.gameOver = function (finalScore) {
         if (this.furry.x < 0 || this.furry.x > 9 || this.furry.y < 0 || this.furry.y > 9) {
             clearInterval(this.idSetInterval);
             this.board[this.index(this.coin.x, this.coin.y)].classList.remove('coin');
             var over = document.getElementById('over');
             over.classList.remove('invisible');
+            var score = document.querySelector(".finalScore");
+            score.textContent = document.querySelector("strong").textContent;
+            const refresh = document.querySelector('.refresh');
+            refresh.addEventListener('click', () => window.location.reload())
         } else {
             this.showFurry();
         }
     }
 }
+
+
 
 
 
