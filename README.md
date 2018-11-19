@@ -1,6 +1,13 @@
 
 # Furry Game
 
+## Table of contents
+- [General info](#General-info)
+- [How to play](#How-to-play)
+- [Technologies](#Technologies)
+- [Setup](#Setup)
+
+
 ## General info
 
 Game made in Vanilla JavaScript as an exercise during Coders Lab BootCamp.
@@ -17,3 +24,12 @@ Your task is to collect as many coins you can and try to do not hit the wall! :)
 - CSS3
 - JavaScript
 - Webpack
+
+## Setup
+
+To run the project:
+```
+ 1. npm i
+ 2. $ npm run dev
+ 3. Open  local host http://localhost:3000
+```
